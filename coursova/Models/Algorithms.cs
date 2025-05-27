@@ -112,20 +112,21 @@ namespace Coursova.Models
                     }
                 }
             }
-for (int k = 0; k < n; k++)
+
+            for (int m = 0; m < n; m++)
             {
-                for (int i = 0; i <= k; i++)
+                for (int i = 0; i < n; i++)
                 {
-                    for (int j = 0; j <= k; j++)
+                    for (int j = 0; j < n; j++)
                     {
                         operations++;
-                        if (dist[i, k] != int.MaxValue && dist[k, j] != int.MaxValue)
+                        if (dist[i, m] != int.MaxValue && dist[m, j] != int.MaxValue)
                         {
-                            int newDist = dist[i, k] + dist[k, j];
-                            if (newDist < dist[i, j])
+                            int throughM = dist[i, m] + dist[m, j];
+                            if (throughM < dist[i, j])
                             {
-                                dist[i, j] = newDist;
-                                next[i, j] = next[i, k];
+                                dist[i, j] = throughM;
+                                next[i, j] = next[i, m];
                             }
                         }
                     }

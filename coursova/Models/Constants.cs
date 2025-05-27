@@ -4,11 +4,11 @@ namespace Coursova.Models
 {
     public static class Constants
     {
-        public const string HelloMessage = "Ця програма призначена для знаходження найкоротшого шляху у графі за допомогою алгоритму Флойда-Уоршалла або Данцига.";
+        public const string HelloMessage = "Ця програма призначена для знаходження найкоротшого шляху у графі за допомогою алгоритму Флойда-Воршела або Данцига.";
 
         public const string SolutionFilePath = "./solution.txt";
 
-        public const string FloydWarshallAlgorithmName = "Флойд-Уоршалл";
+        public const string FloydWarshallAlgorithmName = "Флойд-Воршел";
         public const string DantzigAlgorithmName = "Данциг";
 
         public const int DefaultMatrixSize = 5;
